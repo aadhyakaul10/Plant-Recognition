@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <title>HTML Backgorund Color</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body style="background-color:lightgreen;">
+<center>
+    <h1>Plant-Leaf Recognition</h1>
+    <p>Is it  healthy or diseased?<br> Upload a picture of it below and click to find out</p>
+    <form action="/" method="post" enctype="multipart/form-data">
+        <div>
+         <input type="file" name="img" placeholder="img" accept="image/*" />
+        </div>
+        <br>
+        <div>
+        <input type="submit" value="predict" />
+        </div>
+    </form>
+</center>
+    <center><h1>{{okay}}</h1></center>
+    <center><h1>Common Name:{{common_name}}</h1></center>
+    <center><h1>Scientific Name:{{scientific_name}}</h1></center>
+
+<center><img src="{{url_for('static' , filename=file) }}" style="width: 500px; height: 500px"></center>
+
+</body>
+</html>
